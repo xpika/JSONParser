@@ -1,5 +1,5 @@
 {-# LANGUAGE NoMonomorphismRestriction #-}
-
+{-# LANGUAGE FlexibleContexts #-}
 
 module Text.JSONParser where
 
