@@ -47,7 +47,7 @@ parseEscapeChar = do
           Right charKey -> "\\"++[charKey]
     return (read ("'"++escapeSequence++"'") :: Char)  
     
-parseAsciiEscapeKey = oneOf "\\/bfnrt"
+parseAsciiEscapeKey = oneOf "\\\"/bfnrt"
 parseUnicodePointCode = replicateM 4 (satisfy isHexDigit)
     
 parseKeyValuePair = do
